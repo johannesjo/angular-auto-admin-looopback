@@ -1,5 +1,5 @@
 # angular auto admin loopback example
-This is an example app for a crud interface for your loopback app created with [generator-moda](https://github.com/johannesjo/generator-modular-angular) and [generator-aaal](https://github.com/johannesjo/generator-angular-auto-admin-looopback)
+This is an example app for a crud interface for your loopback app created with [generator-moda](https://github.com/johannesjo/generator-modular-angular) and [generator-aaal](https://github.com/johannesjo/generator-angular-auto-admin-loopback)
 ## getting started
 Clone the repository
 ```
