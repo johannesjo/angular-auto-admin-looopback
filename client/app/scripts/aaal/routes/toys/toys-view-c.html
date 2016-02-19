@@ -1,0 +1,19 @@
+<div class="page--toys-view">
+    <div>
+        <button type="button"
+                ui-sref="private.ToysList"
+                class="btn btn-default">
+            <i class="glyphicon glyphicon-backward">
+            </i> Back to overview
+        </button>
+        <button type="button"
+                ui-sref="private.ToysEdit({id:vm.model.id})"
+                class="btn btn-info">
+            <i class="glyphicon glyphicon-edit">
+            </i> Edit
+        </button>
+    </div>
+
+    <h2>{{vm.modelName}} #{{vm.model.id}}</h2>
+    <pre class="code">{{ vm.model|json }}</pre>
+</div>

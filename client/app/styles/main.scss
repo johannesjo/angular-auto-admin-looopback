@@ -1,0 +1,64 @@
+/*
+IMPORTANT NOTE:
+ This file SHOULD NOT BE EDITED MANUALLY, as its purpose
+ is to be the point where all your stylesheet-files will
+ be imported
+*/
+
+
+
+// inject:sass
+
+@import  '_functions/_some-function.scss';
+
+@import  '_mixins/_some-mixin.scss';
+
+@import  '_placeholders/_some-placeholder.scss';
+
+@import  '_variables.scss';
+
+@import  '../scripts/aaal/components/auth/login/_login-d.scss';
+
+@import  '../scripts/aaal/routes/another-model/_another-model-edit-c.scss';
+
+@import  '../scripts/aaal/routes/another-model/_another-model-list-c.scss';
+
+@import  '../scripts/aaal/routes/another-model/_another-model-view-c.scss';
+
+@import  '../scripts/aaal/routes/beer/_beer-edit-c.scss';
+
+@import  '../scripts/aaal/routes/beer/_beer-list-c.scss';
+
+@import  '../scripts/aaal/routes/beer/_beer-view-c.scss';
+
+@import  '../scripts/aaal/routes/test-model/_test-model-edit-c.scss';
+
+@import  '../scripts/aaal/routes/test-model/_test-model-list-c.scss';
+
+@import  '../scripts/aaal/routes/test-model/_test-model-view-c.scss';
+
+@import  '../scripts/aaal/routes/toys/_toys-edit-c.scss';
+
+@import  '../scripts/aaal/routes/toys/_toys-list-c.scss';
+
+@import  '../scripts/aaal/routes/toys/_toys-view-c.scss';
+
+@import  'base/_buttons.scss';
+
+@import  'base/_fonts.scss';
+
+@import  'base/_forms.scss';
+
+@import  'base/_icons.scss';
+
+@import  'base/_lists.scss';
+
+@import  'base/_page.scss';
+
+@import  'base/_tables.scss';
+
+@import  'base/_typography.scss';
+
+@import  '../scripts/page-header/_page-header-d.scss';
+
+// endinject

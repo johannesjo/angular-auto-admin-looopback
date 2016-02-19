@@ -1,0 +1,45 @@
+$main-blue: #53738D;
+$main-green: #078E84;
+$main-gray: #E5EAEE;
+$facts-gray: #D3D9DB;
+
+$blue-1: #1A3D5A;
+$blue-2: #325573;
+$blue-3: #7A93A7;
+$blue-4: #B0C0CE;
+$flyer-green: #6EBE44;
+
+$main-font: 'Unit';
+$base-spacing: 20px;
+$outline-substitute-shadow: 0 0 3px 2px $main-blue;
+
+$fz-xxl: 32px;
+$fz-xl: 24px;
+$fz-l: 20px;
+$fz-n: 16px;
+$fz-s: 14px;
+$fz-xs: 8px;
+$max-content-img-width: 500px;
+$standard-animation-duration: 0.3s;
+
+$header-height: 64px;
+$max-content-width: 800px;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs: 480px !default;
+// Small screen / tablet
+$screen-sm: 768px !default;
+// Medium screen / desktop
+$screen-md: 992px !default;
+// Large screen / wide desktop
+$screen-lg: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-sm-max: ($screen-md - 1) !default;
+$screen-md-max: ($screen-lg - 1) !default;
+$screen-xs-max: ($screen-sm - 1) !default;

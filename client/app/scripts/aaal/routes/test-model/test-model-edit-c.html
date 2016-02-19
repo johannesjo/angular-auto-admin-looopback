@@ -1,0 +1,28 @@
+<div class="page--test-model-edit">
+    <div>
+        <button type="button"
+                ui-sref="private.TestModelList"
+                class="btn btn-default">
+            <i class="glyphicon glyphicon-backward"></i>
+            Back to overview
+        </button>
+        <button type="button"
+                ng-if="vm.model.id"
+                ui-sref="private.TestModelView({id:vm.model.id})"
+                class="btn btn-default">
+            <i class="glyphicon glyphicon-play"></i>
+            View
+        </button>
+    </div>
+
+    <h2>{{ vm.model.id && 'Edit '+vm.modelName+' #'+vm.model.id||'Create new ' +vm.modelName }} </h2>
+    <form sf-schema="vm.schema"
+          sf-form="vm.form"
+          sf-model="vm.model"
+          ng-submit="vm.createOrUpdate()"></form>
+
+    <h3>Model Data</h3>
+    <pre>{{vm.model | json}}</pre>
+    <pre>{{vm.schema | json}}</pre>
+    <pre>{{vm.form | json}}</pre>
+</div>

@@ -1,0 +1,126 @@
+{
+  "generator-moda": {
+    "testSuffix": ".spec",
+    "testPassOnDefault": true,
+    "alwaysSkipDialog": false,
+    "stylePrefix": "_",
+    "editorCommand": "idea",
+    "uiRouter": true,
+    "pathOutputStyle": "dasherize",
+    "routesFile": "app/scripts/routes.js",
+    "fileExt": {
+      "script": ".js",
+      "tpl": ".html",
+      "style": ".scss"
+    },
+    "dirs": {
+      "app": "app",
+      "appModules": "scripts",
+      "globalComponents": "main",
+      "routes": "routes"
+    },
+    "subGenerators": {
+      "directive": {
+        "suffix": "-d",
+        "globalDir": "",
+        "createDirectory": true
+      },
+      "controller": {
+        "suffix": "-c",
+        "nameSuffix": "Ctrl",
+        "globalDir": "",
+        "createDirectory": true
+      },
+      "service": {
+        "suffix": "-s",
+        "globalDir": "main/global-services"
+      },
+      "factory": {
+        "suffix": "-f",
+        "globalDir": "main/global-services"
+      },
+      "filter": {
+        "suffix": "-filter",
+        "globalDir": "main/global-filters"
+      },
+      "provider": {
+        "suffix": "-p",
+        "globalDir": "main/global-services"
+      },
+      "decorator": {
+        "suffix": "-decorator",
+        "globalDir": "main/global-services"
+      },
+      "mod": {
+        "prefix": "_",
+        "createDirectory": true
+      }
+    }
+  },
+  "generator-aaal": {
+    "addTestFiles": true,
+    "addStyleFiles": true,
+    "testSuffix": ".spec",
+    "testPassOnDefault": true,
+    "stylePrefix": "_",
+    "editorCommand": "idea",
+    "uiRouter": true,
+    "baseState": "private.",
+    "moduleName": "aaal",
+    "pathOutputStyle": "dasherize",
+    "routesFile": "app/scripts/aaal/aaal-routes.js",
+    "slcServiceCommandArgs": [
+      "../server/server.js",
+      "app/scripts/aaal/lb-services-s.js"
+    ],
+    "pathToModels": "./../common/models",
+    "fileExt": {
+      "script": ".js",
+      "tpl": ".html",
+      "style": ".scss"
+    },
+    "modelListSettings": {
+      "additionalFields": {
+        "*": {
+          "updatedAt": {
+            "type": "date",
+            "readonly": true
+          },
+          "createdAt": {
+            "type": "date",
+            "readonly": true
+          }
+        }
+      }
+    },
+    "dirs": {
+      "app": "app",
+      "basePath": "scripts/aaal",
+      "routes": "routes",
+      "components": "components"
+    },
+    "subGenerators": {
+      "overview": {
+        "stateSuffix": "List",
+        "subRoute": "list",
+        "suffix": "-list-c",
+        "nameSuffix": "ListCtrl",
+        "createDirectory": true
+      },
+      "edit": {
+        "stateSuffix": "Edit",
+        "subRoute": "edit",
+        "suffix": "-edit-c",
+        "nameSuffix": "EditCtrl",
+        "createDirectory": true
+      },
+      "view": {
+        "stateSuffix": "View",
+        "subRoute": "view",
+        "suffix": "-view-c",
+        "nameSuffix": "ViewCtrl",
+        "createDirectory": true
+      }
+    }
+  }
+}

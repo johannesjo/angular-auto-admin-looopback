@@ -1,0 +1,14 @@
+page-header {
+    .navbar-nav > li {
+        margin-bottom: 0 !important;
+        > a {
+            @media (max-width: $screen-md-max) {
+                display: block;
+                overflow: hidden;
+                max-width: 120px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

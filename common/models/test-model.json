@@ -1,0 +1,30 @@
+{
+  "name": "TestModel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "showInOverview": true
+    },
+    "description": {
+      "type": "string",
+      "format": "html"
+    },
+    "someDate": {
+      "type": "date",
+      "showInOverview": true
+    },
+    "somethingRequired": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

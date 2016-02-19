@@ -1,0 +1,33 @@
+{
+  "name": "Beer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "ingredients": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "anything": {
+      "type": "any"
+    },
+    "number": {
+      "type": "number"
+    },
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
