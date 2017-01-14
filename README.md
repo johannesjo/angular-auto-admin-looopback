@@ -26,5 +26,5 @@ Rebuild the backend (e.g. after model changes)
 ```
 npm install -g yo bower generator-aaal
 rm -r client/app/scripts/aaal
-yo aaal
+cd client && yo aaal
 ```
